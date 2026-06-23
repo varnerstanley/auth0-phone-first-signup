@@ -111,7 +111,8 @@ The CLI confirms success:
 Next Steps:
   Navigate to auth0-phone-first-signup
   Run npm install if dependencies are not installed
-  Start the local dev server using auth0 acul dev
+  Start the local dev server using
+  **auth0 acul dev**
 ```
 
 ---
