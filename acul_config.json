@@ -1,0 +1,10 @@
+{
+  "chosen_template": "react",
+  "screens": [
+    "signup-id"
+  ],
+  "created_at": "2026-06-23T22:29:02Z",
+  "modified_at": "2026-06-23T22:29:02Z",
+  "app_version": "v2.0.1",
+  "acul_manifest_version": "1.0.0"
+}
