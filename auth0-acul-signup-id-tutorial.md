@@ -449,7 +449,7 @@ For CI/CD, the recommended pattern:
 - Push assets to CDN
 - Call `PATCH /v2/prompts/signup/screen/signup-id/rendering` with the new CDN URLs and SRI hashes
 
-See [Auth0's Deployment Workflow docs](https://auth0.com/docs/customize/login-pages/advanced-customizations/deployment-workflow) for the full pipeline setup.
+Next Step: Next guide will walk through [Auth0's Deployment Workflow docs](https://auth0.com/docs/customize/login-pages/advanced-customizations/deployment-workflow) for the full pipeline setup.
 
 ---
 
