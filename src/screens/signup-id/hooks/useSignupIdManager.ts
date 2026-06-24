@@ -1,5 +1,5 @@
 import { useSignupId } from "@auth0/auth0-acul-react/signup-id";
-import { useScreen, useTransaction } from "@auth0/auth0-acul-react/signup-id";
+import { useScreen, useTransaction, useUntrustedData } from "@auth0/auth0-acul-react/signup-id";
 import type {
   FederatedSignupOptions,
   ScreenMembersOnSignupId,
@@ -16,9 +16,13 @@ export const useSignupIdManager = () => {
 
   const screen: ScreenMembersOnSignupId = useScreen();
   const transaction: TransactionMembersOnSignupId = useTransaction();
+  const untrustedData = useUntrustedData();
   const { alternateConnections } = transaction;
 
   const { isCaptchaAvailable, texts, loginLink, captcha } = screen;
+
+  const prefilledEmail = untrustedData?.authorizationParams?.['ext-email'] ?? '';
+  const prefilledPhone = untrustedData?.authorizationParams?.['ext-phone'] ?? '';
 
   const handleSignup = async (payload: SignupOptions): Promise<void> => {
     // Clean and prepare data like login-id pattern
@@ -65,5 +69,7 @@ export const useSignupIdManager = () => {
     alternateConnections,
     captcha,
     locales,
+    prefilledEmail,
+    prefilledPhone,
   };
 };
