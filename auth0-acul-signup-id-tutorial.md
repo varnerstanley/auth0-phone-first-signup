@@ -466,10 +466,3 @@ See [Auth0's Deployment Workflow docs](https://auth0.com/docs/customize/login-pa
 | Integration test | `auth0 acul dev --connected` + `auth0 test login` for end-to-end verification |
 
 ---
-
-## Next Steps
-
-- **Passkey enrollment** — already implemented in the [reference repo](https://github.com/varnerstanley/auth0-phone-first-signup) via `src/screens/passkey-enrollment/` and `src/screens/passkey-enrollment-local/`. Auth0 automatically routes users to these screens when passkey nudging is enabled. The `passkey-enrollment-local` screen includes a "Don't show again" checkbox that calls `abortPasskeyEnrollment({ doNotShowAgain: true })` to suppress future nudges.
-- **Add captcha** — pass `captcha` in the `signup()` payload; Auth0 injects the widget automatically when bot detection is on
-- **Customize the `login-id` screen** — same three-file pattern, swap the import to `@auth0/auth0-acul-react/login-id`
-- **Tailwind theming** — wire Auth0's CSS token variables to Tailwind tokens using the [Tailwind use case guide](https://auth0.com/docs/customize/login-pages/advanced-customizations/acul-use-cases)
