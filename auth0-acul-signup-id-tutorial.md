@@ -2,6 +2,9 @@
 
 Quick Highlevel Steps:
 After Auth0 CLI is installed
+```bash
+auth0 login
+```
 <pre><code>auth0 acul init "Your_App_Name"
   --template "React (with ACUL <b>React SDK</b>)"
   --screens signup-id
