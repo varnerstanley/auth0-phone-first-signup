@@ -10,7 +10,9 @@ After Auth0 CLI is installed
 ```bash
 auth0 acul dev
 ```
-Connect to Auth0 Tenant using 
+Make code changes.
+
+When ready connect to Auth0 Tenant using 
 ```bash
 auth0 acul dev --connected
 ```
