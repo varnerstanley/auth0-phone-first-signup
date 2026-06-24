@@ -398,11 +398,11 @@ In the inspector:
 
 **Phone mode (default — what every user sees on first load):**
 
-![Phone mode — country picker, phone number field, Continue button, then OR with Continue with Email / Google / Apple](public/screenshots/phone-mode.png)
+![Phone mode — country picker, phone number field, Continue button, then OR with Continue with Email / Google / Apple](public/screenshots/phone.png)
 
 **Email mode (after clicking "Continue with Email"):**
 
-![Email mode — email address field, Continue button, then OR with Google / Apple / Use phone number instead](public/screenshots/email-mode.png)
+![Email mode — email address field, Continue button, then OR with Google / Apple / Use phone number instead](public/screenshots/email.png)
 
 The dev server has hot-reload — save any file and the inspector updates immediately.
 
