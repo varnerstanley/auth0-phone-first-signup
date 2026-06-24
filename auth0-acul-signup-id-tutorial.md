@@ -22,6 +22,7 @@ auth0 acul dev --connected
 ```bash
 auth0 test login
 ```
+------------
 
 Auth0's Advanced Customizations for Universal Login (ACUL) lets you replace any built-in authentication screen with your own React components — without giving up Auth0's security infrastructure. This tutorial walks through the full workflow, from CLI setup to a finished custom sign-up screen that:
 
