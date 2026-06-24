@@ -1,5 +1,23 @@
 # Build a Phone-First Sign-Up Screen with Auth0 ACUL
 
+Quick Highlevel Steps:
+After Auth0 CLI is installed
+<pre><code>auth0 acul init "Your_App_Name"
+  --template "React (with ACUL <b>React SDK</b>)"
+  --screens signup-id
+</code></pre>
+
+```bash
+auth0 acul dev
+```
+Connect to Auth0 Tenant using 
+```bash
+auth0 acul dev --connected
+```
+```bash
+auth0 test login
+```
+
 Auth0's Advanced Customizations for Universal Login (ACUL) lets you replace any built-in authentication screen with your own React components — without giving up Auth0's security infrastructure. This tutorial walks through the full workflow, from CLI setup to a finished custom sign-up screen that:
 
 - **Defaults to phone number** (country code picker + number field)
